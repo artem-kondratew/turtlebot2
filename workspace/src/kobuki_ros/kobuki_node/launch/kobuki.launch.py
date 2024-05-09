@@ -24,15 +24,21 @@ def generate_launch_description():
         executable='static_transform_publisher',
         name='base_footprint_static_tf',
         arguments=[
-            '--x', '0.0',
-            '--y', '0.0',
-            '--z', '0.0',
-            '--roll', '0.0',
-            '--pitch', '0.0',
-            '--yaw', '0.0',
-            '--frame-id', 'base_link',
-            '--child-frame-id', 'base_footprint',
+            '0.0',
+            '0.0',
+            '0.0',
+            '0.0',
+            '0.0',
+            '0.0',
+            'base_link',
+            'base_footprint'
         ]
+    )
+
+    base_footprint_transform = Node(
+        package='cmd_vel_wrapper',
+        executable='cmd_vel_wrapper',
+        name='cmd_vel_wrapper',
     )
 
     return launch.LaunchDescription([kobuki_ros_node, base_footprint_transform])
