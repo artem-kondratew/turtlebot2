@@ -322,16 +322,16 @@ void KobukiRos::update()
     return;
   }
 
-  if (kobuki_.isEnabled() && odometry_->commandTimeout(this->get_clock()->now())) {
-    if (!cmd_vel_timed_out_) {
-      kobuki_.setBaseControl(0, 0);
-      cmd_vel_timed_out_ = true;
-      RCLCPP_WARN(get_logger(), "Incoming velocity commands not received for more than %.2f seconds -> zero'ing velocity commands", odometry_->timeout().seconds());
-    }
-  }
-  else {
-    cmd_vel_timed_out_ = false;
-  }
+  // if (kobuki_.isEnabled() && odometry_->commandTimeout(this->get_clock()->now())) {
+  //   if (!cmd_vel_timed_out_) {
+  //     kobuki_.setBaseControl(0, 0);
+  //     cmd_vel_timed_out_ = true;
+  //     RCLCPP_WARN(get_logger(), "Incoming velocity commands not received for more than %.2f seconds -> zero'ing velocity commands", odometry_->timeout().seconds());
+  //   }
+  // }
+  // else {
+  //   cmd_vel_timed_out_ = false;
+  // }
 
   bool is_alive = kobuki_.isAlive();
   if (watchdog_diagnostics_.isAlive() && !is_alive) {
