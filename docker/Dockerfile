@@ -31,6 +31,7 @@ RUN python3 -m pip install setuptools==58.2.0
 
 RUN DEBIAN_FRONTEND=noninteractive apt install -y python3-colcon-common-extensions
 RUN DEBIAN_FRONTEND=noninteractive apt install -y ros-${ROS_DISTRO}-rmw-cyclonedds-cpp
+RUN DEBIAN_FRONTEND=noninteractive apt install -y ros-${ROS_DISTRO}-ecl-*
 
 #RUN DEBIAN_FRONTEND=noninteractive apt install -y ros-${ROS_DISTRO}-slam-toolbox
 #RUN DEBIAN_FRONTEND=noninteractive apt install -y ros-${ROS_DISTRO}-navigation2 ros-${ROS_DISTRO}-nav2-bringup
