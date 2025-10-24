@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(kobuki_node)
 
+add_compile_options(-Wno-class-memaccess)
+
 find_package(ament_cmake_ros REQUIRED)
 find_package(angles REQUIRED)
 find_package(diagnostic_msgs REQUIRED)

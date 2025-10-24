@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 
 project(kobuki_random_walker)
 
+add_compile_options(-Wno-class-memaccess)
+
 find_package(ament_cmake_ros REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(kobuki_ros_interfaces REQUIRED)

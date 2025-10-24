@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(kobuki_auto_docking)
 
+add_compile_options(-Wno-class-memaccess)
+
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 14)

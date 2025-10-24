@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(kobuki_controller_tutorial)
+
+add_compile_options(-Wno-class-memaccess)
+
 find_package(catkin REQUIRED COMPONENTS roscpp
                                         nodelet
                                         pluginlib

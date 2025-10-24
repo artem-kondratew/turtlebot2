@@ -5,6 +5,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(kobuki_core)
 
+add_compile_options(-Wno-class-memaccess)
+
 # Turn -isystem off. Actually like to see warnings from underlying packages
 # and regardless, have run into trouble because of the ordering it induces.
 set(CMAKE_NO_SYSTEM_FROM_IMPORTED TRUE)

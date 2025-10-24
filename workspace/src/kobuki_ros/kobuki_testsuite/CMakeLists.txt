@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(kobuki_testsuite)
+
+add_compile_options(-Wno-class-memaccess)
+
 find_package(catkin REQUIRED COMPONENTS kobuki_driver kobuki_node std_msgs sensor_msgs geometry_msgs message_generation)
 
 catkin_python_setup()

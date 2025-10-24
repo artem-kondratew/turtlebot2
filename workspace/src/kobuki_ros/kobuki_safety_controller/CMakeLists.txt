@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(kobuki_safety_controller)
 
+add_compile_options(-Wno-class-memaccess)
+
 find_package(ament_cmake_ros REQUIRED)
 find_package(ecl_build REQUIRED)
 find_package(geometry_msgs REQUIRED)
