@@ -1,0 +1,214 @@
+Starting >>> kobuki_core
+Starting >>> kobuki_ros_interfaces
+Finished <<< kobuki_ros_interfaces [4.20s]
+--- stderr: kobuki_core
+In file included from /usr/include/eigen3/Eigen/Core:214,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/modules/diff_drive.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/diff_drive.cpp:14:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h: In function ‘Packet Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]’:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9: error: ‘void* memcpy(void*, const void*, size_t)’ copying an object of non-trivial type ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} from an array of ‘const int8_t’ {aka ‘const signed char’} [-Werror=class-memaccess]
+ 1671 |   memcpy(&res, from, sizeof(Packet4c));
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:172,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/modules/diff_drive.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/diff_drive.cpp:14:
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8: note: ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} declared here
+  159 | struct eigen_packet_wrapper
+      |        ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:214,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/modules/diff_drive.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/modules.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/command.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/command.cpp:14:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h: In function ‘Packet Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]’:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9: error: ‘void* memcpy(void*, const void*, size_t)’ copying an object of non-trivial type ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} from an array of ‘const int8_t’ {aka ‘const signed char’} [-Werror=class-memaccess]
+ 1671 |   memcpy(&res, from, sizeof(Packet4c));
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:172,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/modules/diff_drive.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/modules.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/command.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/command.cpp:14:
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8: note: ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} declared here
+  159 | struct eigen_packet_wrapper
+      |        ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:214,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/modules/diff_drive.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/modules.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/command.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/command.cpp:14:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h: In function ‘Packet Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]’:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9: error: ‘void* memcpy(void*, const void*, size_t)’ copying an object of non-trivial type ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} from an array of ‘const int8_t’ {aka ‘const signed char’} [-Werror=class-memaccess]
+ 1716 |   memcpy(&res, from, sizeof(Packet4c));
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:172,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/modules/diff_drive.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/modules.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/command.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/command.cpp:14:
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8: note: ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} declared here
+  159 | struct eigen_packet_wrapper
+      |        ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:214,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/modules/diff_drive.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/diff_drive.cpp:14:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h: In function ‘Packet Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]’:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9: error: ‘void* memcpy(void*, const void*, size_t)’ copying an object of non-trivial type ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} from an array of ‘const int8_t’ {aka ‘const signed char’} [-Werror=class-memaccess]
+ 1716 |   memcpy(&res, from, sizeof(Packet4c));
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:172,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/modules/diff_drive.hpp:23,
+                 from /workspace/src/kobuki_core/src/driver/diff_drive.cpp:14:
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8: note: ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} declared here
+  159 | struct eigen_packet_wrapper
+      |        ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:214,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/dock_drive.hpp:25,
+                 from /workspace/src/kobuki_core/src/driver/dock_drive.cpp:12:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h: In function ‘Packet Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]’:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9: error: ‘void* memcpy(void*, const void*, size_t)’ copying an object of non-trivial type ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} from an array of ‘const int8_t’ {aka ‘const signed char’} [-Werror=class-memaccess]
+ 1671 |   memcpy(&res, from, sizeof(Packet4c));
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:172,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/dock_drive.hpp:25,
+                 from /workspace/src/kobuki_core/src/driver/dock_drive.cpp:12:
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8: note: ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} declared here
+  159 | struct eigen_packet_wrapper
+      |        ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:214,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/dock_drive.hpp:25,
+                 from /workspace/src/kobuki_core/src/driver/dock_drive_debug.cpp:12:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h: In function ‘Packet Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]’:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9: error: ‘void* memcpy(void*, const void*, size_t)’ copying an object of non-trivial type ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} from an array of ‘const int8_t’ {aka ‘const signed char’} [-Werror=class-memaccess]
+ 1671 |   memcpy(&res, from, sizeof(Packet4c));
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:172,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/dock_drive.hpp:25,
+                 from /workspace/src/kobuki_core/src/driver/dock_drive_debug.cpp:12:
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8: note: ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} declared here
+  159 | struct eigen_packet_wrapper
+      |        ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:214,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/dock_drive.hpp:25,
+                 from /workspace/src/kobuki_core/src/driver/dock_drive.cpp:12:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h: In function ‘Packet Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]’:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9: error: ‘void* memcpy(void*, const void*, size_t)’ copying an object of non-trivial type ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} from an array of ‘const int8_t’ {aka ‘const signed char’} [-Werror=class-memaccess]
+ 1716 |   memcpy(&res, from, sizeof(Packet4c));
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:172,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/dock_drive.hpp:25,
+                 from /workspace/src/kobuki_core/src/driver/dock_drive.cpp:12:
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8: note: ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} declared here
+  159 | struct eigen_packet_wrapper
+      |        ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:214,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/dock_drive.hpp:25,
+                 from /workspace/src/kobuki_core/src/driver/dock_drive_debug.cpp:12:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h: In function ‘Packet Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]’:
+/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9: error: ‘void* memcpy(void*, const void*, size_t)’ copying an object of non-trivial type ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} from an array of ‘const int8_t’ {aka ‘const signed char’} [-Werror=class-memaccess]
+ 1716 |   memcpy(&res, from, sizeof(Packet4c));
+      |   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:172,
+                 from /usr/include/eigen3/Eigen/Cholesky:11,
+                 from /opt/ros/humble/include/ecl/linear_algebra/eigen.hpp:21,
+                 from /opt/ros/humble/include/ecl/linear_algebra.hpp:24,
+                 from /opt/ros/humble/include/ecl/geometry/pose2d.hpp:21,
+                 from /opt/ros/humble/include/ecl/geometry.hpp:20,
+                 from /workspace/src/kobuki_core/src/driver/../../include/kobuki_core/dock_drive.hpp:25,
+                 from /workspace/src/kobuki_core/src/driver/dock_drive_debug.cpp:12:
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8: note: ‘Eigen::internal::Packet4c’ {aka ‘struct Eigen::internal::eigen_packet_wrapper<int, 2>’} declared here
+  159 | struct eigen_packet_wrapper
+      |        ^~~~~~~~~~~~~~~~~~~~
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [src/driver/CMakeFiles/kobuki_core.dir/build.make:146: src/driver/CMakeFiles/kobuki_core.dir/dock_drive_debug.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [src/driver/CMakeFiles/kobuki_core.dir/build.make:90: src/driver/CMakeFiles/kobuki_core.dir/command.cpp.o] Error 1
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [src/driver/CMakeFiles/kobuki_core.dir/build.make:132: src/driver/CMakeFiles/kobuki_core.dir/dock_drive.cpp.o] Error 1
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [src/driver/CMakeFiles/kobuki_core.dir/build.make:118: src/driver/CMakeFiles/kobuki_core.dir/diff_drive.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:237: src/driver/CMakeFiles/kobuki_core.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
+---
+Failed   <<< kobuki_core [14.4s, exited with code 2]
+
+Summary: 1 package finished [15.5s]
+  1 package failed: kobuki_core
+  1 package had stderr output: kobuki_core
+  1 package not processed

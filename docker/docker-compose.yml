@@ -1,0 +1,71 @@
+services:
+  ros2:
+    build:
+      context: .
+      args:
+        BASE_IMAGE: ${BASE_IMAGE}
+    image: ros2_humble
+
+    network_mode: bridge
+#    dns:
+#      - 8.8.8.8
+#      - 1.1.1.1
+    ports:
+      - "7400-7500:7400-7500"
+
+    working_dir: /workspace
+    volumes:
+      - ../workspace:/workspace
+      - /dev/ttyUSB0:/dev/ttyUSB0
+      - ./entrypoint_ros2.sh:/entrypoint_ros2.sh
+      - ../cyclonedds.xml:/cyclonedds.xml
+
+    environment:
+      - ROBOT_ID=${ROBOT_ID}
+      #- RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+      #- ROS_DOMAIN_ID=37
+      #- CYCLONEDDS_URI=/cyclonedds.xml
+
+    entrypoint: ["bash", "/entrypoint_ros2.sh"]
+
+    privileged: true
+
+    tty: true
+    stdin_open: true
+    command: bash
+    restart: unless-stopped
+
+  ros2-builder:
+    build:
+      context: .
+      args:
+        BASE_IMAGE: ${BASE_IMAGE}
+    image: ros2_humble
+
+    network_mode: bridge
+#    dns:
+#      - 8.8.8.8
+#      - 1.1.1.1
+
+    working_dir: /workspace
+    volumes:
+      - ../workspace:/workspace
+      - /dev/ttyUSB0:/dev/ttyUSB0
+      - ./entrypoint_ros2.sh:/entrypoint_ros2.sh
+      - ./entrypoint_lidar.sh:/entrypoint_lidar.sh
+      - ../cyclonedds.xml:/cyclonedds.xml
+
+    environment:
+      - ROBOT_ID=${ROBOT_ID}
+      #- RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+      #- ROS_DOMAIN_ID=37
+      #- CYCLONEDDS_URI=/cyclonedds.xml
+
+    entrypoint: ["bash", "/entrypoint_lidar.sh"]
+
+    privileged: true
+
+    tty: true
+    stdin_open: true
+    command: bash
+    restart: unless-stopped
